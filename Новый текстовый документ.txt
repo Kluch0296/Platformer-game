@@ -1,0 +1,45 @@
+  const platforms = [
+    new Platform(100, canvas.height - 100, 100, 10),
+    new Platform(300, canvas.height - 200, 150, 10),
+    new Platform(500, canvas.height - 300, 200, 10),
+    new Platform(750, canvas.height - 250, 100, 10),
+    new Platform(1000, canvas.height - 350, 150, 10),
+    new Platform(1250, canvas.height - 200, 100, 10),
+    new Platform(1500, canvas.height - 100, 250, 10),
+    new Platform(1800, canvas.height - 150, 150, 10),
+    new Platform(2100, canvas.height - 250, 200, 10),
+    new Platform(2400, canvas.height - 300, 100, 10),
+    new Platform(2700, canvas.height - 200, 200, 10),
+    new Platform(3000, canvas.height - 100, 150, 10),
+	new Platform(3150, canvas.height - 150, 150, 10),
+    new Platform(3300, canvas.height - 280, 100, 10),
+    new Platform(3600, canvas.height - 250, 200, 10),
+    new Platform(3900, canvas.height - 150, 100, 10),
+	new Platform(4050, canvas.height - 220, 100, 10),
+    new Platform(4200, canvas.height - 300, 150, 10),
+    new Platform(4500, canvas.height - 200, 100, 10),
+    new Platform(4800, canvas.height - 100, 250, 10),
+	new Platform(4900, canvas.height - 200, 270, 10),
+	new Platform(5200, canvas.height - 250, 300, 10),
+	new Platform(5550, canvas.height - 375, 100, 10),
+	new Platform(5700, canvas.height - 100, 150, 10),
+	new Platform(5900, canvas.height - 170, 80, 10),
+    new Platform(6150, canvas.height - 150, 180, 10),
+	new Platform(6150, canvas.height - 270, 180, 10),
+	new Platform(6450, canvas.height - 350, 120, 10),
+	new Platform(6700, canvas.height - 250, 160, 10),
+	new Platform(6900, canvas.height - 100, 100, 10),
+	new Platform(6900, canvas.height - 350, 100, 10),
+	new Platform(7100, canvas.height - 300, 200, 10),
+
+    new TrapPlatform(1200, canvas.height - 250, 120, 10),
+    new TrapPlatform(3100, canvas.height - 350, 150, 10),
+
+    new Platform(0, canvas.height - 18, canvas.width, 19), //canvas.width
+  ];
+  
+  const bugs = [
+    new Bug(200, canvas.height - 50, 3),
+    new Bug(400, canvas.height - 50, 4),
+    new Bug(600, canvas.height - 50, 2),
+  ];

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Платформер</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      body {
+        margin: 0;
+      }
+      canvas {
+        display: block;
+        background-color: #f0f0f0;
+      }
+	  .cookie-consent-banner {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 9999;
+      }
+      .cookie-consent-banner a {
+        color: #fff;
+        text-decoration: underline;
+      }
+      .cookie-consent-banner.hidden {
+        display: none;
+      }
+      #cookie-consent-accept {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 0 25px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+	  #sound-toggle {
+        position: absolute;
+        top: 30px;
+        right: 5px;
+        padding: 8px 16px;
+		background-color: transparent;
+		border: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="hero.js"></script>
+    <script type="module" src="platform.js"></script>
+    <script type="module" src="bug.js"></script>
+    <script type="module" src="camera.js"></script>
+	<!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" class="cookie-consent-banner hidden">
+      <p>Я использую куки для сохранения позиции героя, счётчика смертей и запоминания нажатия на эту кнопку → → →</p>
+      <button id="cookie-consent-accept">Ага, держи в курсе</button>
+    </div>
+    <audio id="jump-sound" src="jump.wav" preload="auto"></audio>
+	<button id="sound-toggle">
+      <img id="sound-on" src="volume.svg" alt="Включить звук" width="25" height="25">
+      <img id="sound-off" src="volume-mute.svg" alt="Выключить звук" width="25" height="25" style="display: none;">
+    </button>
+
+  </body>
+</html>
